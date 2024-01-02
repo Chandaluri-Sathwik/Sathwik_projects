@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech_News</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.svg" alt="logo">
+        </div>
+        <nav class="navbar">
+            <ul class="sidebar">
+                <li class="close" onclick=closeSidebar()><img src="images/icon-menu-close.svg" alt="close_icon"></li>
+                <li   class="links"><a href="Home.html">Home</a></li>
+                <li class="links"><a href="New.html">New</a></li>
+                <li class="links"><a href="Popular.html">Popular</a></li>
+                <li class="links"><a href="Trending.html">Trending</a></li>
+                <li class="links"><a href="Categories.html">Categories</a></li>
+                <div class="sidedark">
+
+                </div>
+            </ul>
+            <ul class="mainbar">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="New.html">New</a></li>
+                <li><a href="Popular.html">Popular</a></li>
+                <li><a href="Trending.html">Trending</a></li>
+                <li><a href="Categories.html">Categories</a></li>
+            </ul>
+        </nav>
+        <div class="nav2" onclick=showSidebar()>
+            <img src="images/icon-menu.svg" alt="menu_img">
+        </div>
+    </header>
+<div class="content">
+    <div class="main-img">
+        <img src="images/image-web-3-desktop.jpg" alt="main-img">
+    </div>
+    <div class="latest_news">
+        <div class="new">
+          <h2>New</h2>
+        </div>
+        <div class="hydrogenvselec_cars" >
+            <h3>Hydrogen VS Electric Cars</h3>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            <hr>
+        </div> 
+        <div class="AIartistry" >
+            <h3>The Downsides of AI Artistry</h3>
+            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+            <hr>
+        </div>
+        
+        <div class="VC_funding" >
+            <h3>Is VC Funding Drying Up?</h3>
+            <p>Private funding by VC firms is down by 50% YOY.We take a look at what that means.</p>
+        </div>
+    </div>
+    <div class="main-heading">
+        <h1>
+            The Bright Future of Web 3.0?
+        </h1>
+    </div>
+    <main>
+        <p>We dive into the next evolution of the web that claims to put the  power of the platforms back into the hands of people.But is it really fullfilling its promise?</p>
+        <button>Read More</button>
+    </main>
+     <div class="retro_pc">
+        <img src="images/image-retro-pcs.jpg" alt="oldmodel_pc">
+    </div >
+
+    <div class="retro_content" >
+        <h2 class="number">01</h2>
+        <h4 class="news">Reviving Retro PCs</h4>
+        <p class="main_content">What happens when old PCs are given modern upgrades?</p>
+    </div>
+
+    <div class="img_laptop">
+        <img src="images/image-top-laptops.jpg" alt="laptopkeyboard">
+    </div>
+    <div class="laptop_content">
+        <h2 class="number">02</h2>
+        <h4 class="news">Top 10 Laptops of 2022</h4>
+        <p class="main_content">Our best picks for various needs and budgets.</p>
+    </div>
+
+    <div class="joystick">
+        <img src="images/image-gaming-growth.jpg" alt="videogame_controller">
+    </div>
+    <div class="gaming_growth">
+        <h2 class="number">03</h2>
+        <h4 class="news">The Growth of Gaming</h4>
+        <p class="main_content">How the pandemic has sparked fresh oppurtunities.</p>
+    </div>
+
+</div>
+<script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display ='flex'
+    }
+    function closeSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display ='none'
+    }
+</script>
+</body>
+</html>
