@@ -104,7 +104,6 @@ main{
     margin:20px 20px;
     display:flex;
     flex-direction: column;
-    /* height:272px; */
     height:226px;
 }
 main p{
@@ -114,7 +113,6 @@ main p{
 }
 main button{
     padding:10px 27px;
-    /* padding-bottom:0px; */
     margin-top:40px;
     background-color:hsl(5, 85%, 63%);
     text-transform: uppercase;
@@ -157,7 +155,6 @@ main button{
 }
 hr{
     color:hsl(231, 38%, 26%);
-    /* padding:5px 0; */
     margin:30px 0;
     position:relative;
     top:6px;
@@ -381,7 +378,6 @@ ul.sidebar li a{
     }
     .nav2{
         justify-self:center;
-        /* width:2em; */
         position:relative;
         top:8px;
     }
@@ -406,6 +402,17 @@ ul.sidebar li a{
         padding:15px;
     }
     .retro_pc,.img_laptop,.joystick{
-        width:125px;
+        width:110px;
+    }
+    /* .main-heading{
+        height:260px;
+    } */
+}
+@media screen and (max-width:370px){
+    .main-heading{
+        height:auto;
+    }
+    .main_content{
+        height:auto;
     }
 }
